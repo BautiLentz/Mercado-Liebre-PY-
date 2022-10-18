@@ -1,0 +1,57 @@
+body{
+    background-color: lightgrey;
+}
+main{
+    background-color: lightgrey;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form div{
+    margin: 5px;
+}
+
+input.tamano{
+    width: 40vw;
+    height: 3vh;
+}
+
+button{
+    background-color: rgb(5, 5, 238);
+    width: 40vw;
+    height: 4vh;
+    margin-top: 5px;
+}
+
+.columna{
+    display: block;
+   justify-content: center;
+}
+
+.border{
+    border-radius: 30px;
+}
+
+@media(min-width:500px){
+
+main{
+    text-align: center;
+    background-color: rgb(190, 183, 183);
+}
+
+    input.tamano{
+        width: 30vw;
+        height: 5vh;
+    }
+    button{
+        width: 30vw;
+        height: 5vh;
+    }
+
+}

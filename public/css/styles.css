@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+header{
+    display: block;
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+}
+
+.banner {
+    max-width: 100%;
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+p{
+    margin: 0px;
+}
+
+h3{
+    font-size:20px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+input {
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+    border-right: solid 1px grey;
+}
+
+.deco-icono{
+    text-align: center;
+    color: grey;
+    font-size: 1em;
+    margin-left: 5px;
+    border: none;
+    background: none;
+}
+
+
+p.texto-tamano{
+    font-size: 12px;
+    text-align: center;
+}
+
+nav.listado li a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 1px;
+    text-align: left;
+}
+ul.bullet-point{
+    list-style: none;
+    padding-left: 10px;
+    display: none;
+}
+
+.icono-menu{
+    text-align: center;
+}
+
+.icono-menu i{
+background-color:#03264C; 
+color:white;
+padding: 8px;
+border-radius:4px;
+}
+
+.imagen-tamano{
+    max-width: 100%;
+}
+
+.precio-producto{
+    font-size: 18px;
+}
+
+.descuento-descripcion{
+    font-size: 16px;
+}
+
+.info-producto{
+    position: relative;
+}
+
+.descuento-descripcion{
+    color:rgb(30, 112, 30);
+}
+.border{
+    background-color: white;
+    border: 1px solid #ebebeb;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+div.linea p{
+    display: inline-block;margin-right:5px;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    margin: 0 px;
+    padding: 0 px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: all .3s;
+}
+
+.metodoFlex{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+
+.producto1 {
+    display: block;
+}
+
+.producto2,
+.producto3,
+.producto4 {
+    display: none;
+}
+
+section {
+    display: flex;
+    position: relative;
+    margin: auto;
+    transition: transform 200ms ease-in;
+}
+
+.logo{
+    max-width: 35%
+}
+
+.buscador{
+    display: block;
+    justify-content: start;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.listado{
+    display: flex;
+    flex-direction: row;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+text-align: center;
+}
+
+.decoracion-icono-footer{
+    color: blue;
+    font-size: 15px;
+}
+.copyright{
+    margin-top: 20px;
+}
+
+/* no me lo toma */
+h4.negrita-h4-fo{
+    font-weight: 700
+}
+
+
+/* LOGIN */
+body.login{
+    background-color: white;
+}
+.radio-circular{
+    border-radius: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 20px;
+    position: relative;
+    right: 10px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+
+
+
+@media(min-width:480px){
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    header{
+        background-color: #EAC926;
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    main{
+        text-align: center;
+        width: 90vw;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p{
+        margin: 0px;
+    }
+    h3{
+        font-size:20px;
+        font-weight: normal;
+        margin: 0px;
+    }
+   
+    .logo {
+        max-width: 30%;
+    }
+
+    p.texto-tamano{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .listado {
+        display: flex;
+        justify-content: space-between;
+    }
+    .listado ul {
+        display: flex;
+    }
+    .listado li {
+        margin: 0 5px;
+    }
+    .listado ul a {
+        font-size: 0.7em;
+    }
+    
+    .icono-menu{
+        display: none;
+    }
+    
+    .imagen-tamano{
+        width: 50vw;
+    }
+    
+    .precio-producto{
+        font-size: 18px;
+    }
+    
+    .descuento-descripcion{
+        font-size: 16px;
+    }
+    
+    .border:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      
+    }
+
+    .metodoFlex{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .border {
+        margin: 6px;
+        padding: 10px;
+        justify-content: space-between
+    }
+    
+    .producto2 {
+        display: block;
+    }
+
+    .header-top{
+        margin-bottom: 15px;
+    }
+
+
+/* LOGIN */
+
+
+
+
+
+
+
+
+}
+
+
+@media(min-width:769px){
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    header{
+        background-color: #EAC926;
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    main{
+        text-align: center;
+        width: 90vw;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p{
+        margin: 0px;
+    }
+    h3{
+        font-size:20px;
+        font-weight: normal;
+        margin: 0px;
+    }
+    
+    .logo {
+        max-width: 25%;
+    }
+    .buscador {
+        width: 350px;
+    }
+    input {
+        width: 305px;
+    }
+    
+    p.texto-tamano{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .listado {
+        display: flex;
+        justify-content: space-between;
+    }
+    .listado ul {
+        display: flex;
+    }
+    .listado li {
+        margin: 0 5px;
+    }
+    .listado ul a {
+        font-size: 1.5em;
+    }
+    
+    .icono-menu{
+       display: none;
+    }
+    
+    .imagen-tamano{
+        width: 50vw;
+    }
+    
+    .precio-producto{
+        font-size: 18px;
+    }
+    
+    .descuento-descripcion{
+        font-size: 16px;
+    }
+   
+    .producto3, .producto4 {
+        display: block;
+    }
+    
+}

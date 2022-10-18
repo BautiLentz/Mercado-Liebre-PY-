@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet" />
+            <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+  <main>
+    <form method="post" action="/">
+
+<div>
+  <input class="tamano border" type="text" name="fullName" id="fullName" placeholder="Nombre y apellido">
+</div>
+
+<div>
+    <input class="tamano border" type="text" name="usuarioName" id="usuarioName" placeholder="Nombre de usuario">
+</div>
+
+<div>
+    <input class="tamano border" type="text" name="email" id="email" placeholder="Email">
+</div>
+<div>
+<p>Fecha de Nacimiento</p>
+<input class="tamano border" type="date" id="fecha" name="fecha">
+
+</div>
+<div>
+
+    <input class="tamano border" type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
+</div>
+<div>
+<p>Perfil de usuario:</p>
+<label> Vendedor<input type="radio" name="tipoDeUser" id="tipoDeUser" value="vendedor"></label>
+<label>Comprador <input type="radio" name="tipoDeUser" id="tipoDeUser" value="comprador"></label>
+</div>
+
+<div>
+    <p>Intereses:</p>
+    <label class="columna">Electro<input type="checkbox" name="categorias" value="electro"></label>
+    <label class="columna">Hogar<input type="checkbox" name="categorias" value="hogar"></label>
+ <label class="columna">Moda<input type="checkbox" name="categorias" value="moda"></label>
+ <label class="columna">Jugeteria<input type="checkbox" name="categorias" value="jugeteria"></label>
+ <label class="columna">Vida sana<input type="checkbox" name="categorias" value="vida sana"></label>
+</div>
+
+<div>
+<label for="perfilFoto">Foto de usuario</label>
+<input type="file" accept=".jpg, .png, .jpeg" name="perfilFoto" id="perfilFoto">
+</div>
+
+<div>
+<input class="tamano border" type="password" name="password" id="password" placeholder="Contraseña">
+
+</div>
+<div>
+<input class="tamano border" type="password" id="confirmarPassword" name="confirmarPassword" placeholder="Confirmar contraseña">
+</div>
+
+<div>
+<button class="border" type="submit">Enviar</button>
+<button  class="border"type="reset">Limpiar formulario</button>
+</div>
+
+
+    </form>
+</main>
+    
+</body>
+</html>
