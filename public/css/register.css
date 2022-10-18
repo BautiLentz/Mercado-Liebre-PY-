@@ -36,6 +36,7 @@ button{
 
 .border{
     border-radius: 30px;
+    border: none;
 }
 
 @media(min-width:500px){
