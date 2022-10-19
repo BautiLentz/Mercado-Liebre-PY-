@@ -22,12 +22,12 @@ main{
     margin: auto;
 }
 
+
 .banner {
     max-width: 100%;
 }
 h2{
     font-size: 24px;
-    text-align: center;
 }
 
 p{
@@ -192,33 +192,37 @@ section {
     display: flex;
     flex-direction: row;
 text-align: center;
+margin-top: 30px;
 }
-
-.decoracion-icono-footer{
-    color: blue;
-    font-size: 15px;
+.fondo{
+    background-color: white;
 }
-.copyright{
-    margin-top: 20px;
-}
-
-/* no me lo toma */
-h4.negrita-h4-fo{
-    font-weight: 700
-}
+ p.no-cel{
+    display: none;
+ }
 
 
 /* LOGIN */
-body.login{
-    background-color: white;
+
+.flex-para-login{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-wrap: wrap;
+
 }
+
+.distancia-header-login{
+    margin-top: 20px;
+}
+
 .radio-circular{
-    border-radius: 20px;
-    margin: 5px;
-    width: 300px;
-    height: 20px;
-    position: relative;
-    right: 10px;
+    border-radius: 5px;
+    margin: 15px;
+    height: 40px;
+    width: 80vw;
+    border: none;
+text-align: center;
 }
 
 .row2{
@@ -229,10 +233,46 @@ body.login{
 }
 
 .margin-top{
+    margin-top: 40px;
+}
+
+.boton-login{
+    border-radius: 5px;
+    margin: 15px;
+    width: 80vw;
+    height: 40px;
+    border: none;
+text-align: center;
+background-color:blue;
+cursor: pointer;
+}
+
+.decoracion-icono-footer{
+    color: blue;
+    font-size: 20px;
+
+}
+.copyright{
     margin-top: 20px;
 }
 
 
+h4.negrita-h4-fo{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.no-cel-loreg{
+    display: none;
+}
+
+.espacio-footer{
+    margin-top: 35vh;
+}
+
+
+/* Register */
 
 
 @media(min-width:480px){
@@ -310,11 +350,12 @@ body.login{
     .metodoFlex{
         display: flex;
         flex-direction: row;
+        
 
     }
 
     .border {
-        margin: 6px;
+        margin: 10px;
         padding: 10px;
         justify-content: space-between
     }
@@ -326,16 +367,42 @@ body.login{
     .header-top{
         margin-bottom: 15px;
     }
-
+.orden a:hover{
+text-decoration: underline;
+}
+p.no-cel{
+    display: flex;
+}
 
 /* LOGIN */
 
+.decoracion-icono-footer{
+    font-size: 40px;
+    transition: all 0.5s;
+  
+}
+
+.boton-login{
+width: 60vw;
+}
+
+.radio-circular{
+    width: 60vw;
+}
+
+    h4.negrita-h4-fo{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .no-cel-loreg{
+        display: flex;
+       justify-content: center;
+    }
 
 
 
-
-
-
+/* Register */
 
 }
 
@@ -417,4 +484,48 @@ body.login{
         display: block;
     }
     
+    .trans p{
+        opacity: 0;
+        transition: all 1s;
+        }
+        .trans h3{
+        opacity: 0;
+        transition: all 0.5s;
+        }
+        
+        .trans:hover p{
+        opacity: 1;
+        }
+        
+        .trans:hover h3{
+        opacity: 1;
+        }
+
+
+
+.decoracion-icono-footer:hover{
+    color:greenyellow;
+
+}
+
+    /* Login */
+    h4.negrita-h4-fo{
+        font-weight: 700;
+        font-size: 20px;
+    }
+   
+    .animacion-boton{
+        transition: all 0.2s;
+    }
+
+.animacion-boton:hover{
+    font-weight: bolder;
+}
+
+
+
+    /* Register */
+
+
+
 }

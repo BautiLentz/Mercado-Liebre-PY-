@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            rel="stylesheet" />
-            <link rel="stylesheet" href="/css/register.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
 </head>
+
 <body>
-  <main>
-    <form method="post" action="/">
+    <header>
+        <nav class="header-top">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <form class="buscador" action="/">
+                <input type="search" placeholder="Buscar productos, marcas">
+                <button class="deco-icono" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <p class="texto-tamano"><i class="fas fa-hand-holding-usd"></i>Comprá
+                en cuotas y sin tarjeta de crédito</p>
+        </nav>
 
-<div>
-  <input class="tamano border" type="text" name="fullName" id="fullName" placeholder="Nombre y apellido">
-</div>
+        <nav class="listado">
+            <ul class="bullet-point orden">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="bullet-point orden">
+                <li><a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="#">Mis compras</a><i class="fas
+                        fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
 
-<div>
-    <input class="tamano border" type="text" name="usuarioName" id="usuarioName" placeholder="Nombre de usuario">
-</div>
+        <div class="icono-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <form class="form-register" method="post" action="/">
 
-<div>
-    <input class="tamano border" type="text" name="email" id="email" placeholder="Email">
-</div>
-<div>
-<p>Fecha de Nacimiento</p>
-<input class="tamano border" type="date" id="fecha" name="fecha">
+            <div class="espacio-div">
+                <input class="border-register" type="text" name="fullName" id="fullName" placeholder="Nombre y apellido">
+            </div>
 
-</div>
-<div>
+            <div class="espacio-div">
+                <input class="border-register" type="text" name="usuarioName" id="usuarioName"
+                    placeholder="Nombre de usuario">
+            </div>
 
-    <input class="tamano border" type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
-</div>
-<div>
-<p>Perfil de usuario:</p>
-<label> Vendedor<input type="radio" name="tipoDeUser" id="tipoDeUser" value="vendedor"></label>
-<label>Comprador <input type="radio" name="tipoDeUser" id="tipoDeUser" value="comprador"></label>
-</div>
+            <div class="espacio-div">
+                <input class="border-register" type="text" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="espacio-div">
+                <p>Fecha de Nacimiento</p>
+                <input class="border-register" type="date" id="fecha" name="fecha">
 
-<div>
-    <p>Intereses:</p>
-    <label class="columna">Electro<input type="checkbox" name="categorias" value="electro"></label>
-    <label class="columna">Hogar<input type="checkbox" name="categorias" value="hogar"></label>
- <label class="columna">Moda<input type="checkbox" name="categorias" value="moda"></label>
- <label class="columna">Jugeteria<input type="checkbox" name="categorias" value="jugeteria"></label>
- <label class="columna">Vida sana<input type="checkbox" name="categorias" value="vida sana"></label>
-</div>
+            </div>
+            <div class="espacio-div">
 
-<div>
-<label for="perfilFoto">Foto de usuario</label>
-<input type="file" accept=".jpg, .png, .jpeg" name="perfilFoto" id="perfilFoto">
-</div>
+                <input class="border-register" type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
+            </div>
+            <div class="espacio-div">
+                <p>Perfil de usuario:</p>
+                <select name="userType" id="userType" class="border-register" required>
+                    <option value="comprador">Comprador</option>
+                    <option value="Vendedor">Vendedor</option>
+                </select>
 
-<div>
-<input class="tamano border" type="password" name="password" id="password" placeholder="Contraseña">
+            <div class="espacio-div">
+                <p>Intereses:</p>
+                <label class="columna-register">Electro<input type="checkbox" name="categorias" value="electro"></label>
+                <label class="columna-register">Hogar<input type="checkbox" name="categorias" value="hogar"></label>
+                <label class="columna-register">Moda<input type="checkbox" name="categorias" value="moda"></label>
+                <label class="columna-register">Jugeteria<input type="checkbox" name="categorias" value="jugeteria"></label>
+                <label class="columna-register">Vida sana<input type="checkbox" name="categorias" value="vida sana"></label>
+            </div>
 
-</div>
-<div>
-<input class="tamano border" type="password" id="confirmarPassword" name="confirmarPassword" placeholder="Confirmar contraseña">
-</div>
+            <div class="espacio-div">
+                <label for="perfilFoto">Foto de usuario</label>
+                <input type="file" accept=".jpg, .png, .jpeg" name="perfilFoto" id="perfilFoto">
+            </div>
 
-<div>
-<button class="border" type="submit">Enviar</button>
-<button  class="border"type="reset">Limpiar formulario</button>
-</div>
+            <div class="espacio-div">
+                <input class="border-register" type="password" name="password" id="password" placeholder="Contraseña">
+
+            </div>
+            <div class="espacio-div">
+                <input class="border-register" type="password" id="confirmarPassword" name="confirmarPassword"
+                    placeholder="Confirmar contraseña">
+            </div>
+
+            <div class="espacio-div">
+                <button class="border-register button-reg animacion-boton" type="submit">Enviar</button>
+                <button class="border-register button-reg animacion-boton" type="reset">Limpiar formulario</button>
+            </div>
 
 
-    </form>
-</main>
-    
+        </form>
+    </main>
+
+    <footer>
+        <div class="row2">
+            <div>
+                <i class="fas fa-credit-card decoracion-icono-footer margin-top"></i>
+                <h4 class="negrita-h4-fo">Pagá con tarjeta o en efectivo</h4>
+                <p class="no-cel-loreg">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta
+                    o efectivo en<br>
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div>
+                <i class="fas fa-gift decoracion-icono-footer"></i>
+                <h4 class="negrita-h4-fo">Envío gratis desde $ 2.500</h4>
+                <p class="no-cel-loreg">Solo por estar registrad@ en Mercado Liebre tenés envíos
+                    gratis en miles de<br>
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div>
+                <i class="fas fa-user-shield decoracion-icono-footer"></i>
+                <h4 class="negrita-h4-fo">Seguridad, de principio a fin</h4>
+                <p class="no-cel-loreg">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que
+                    no puedas hacer,<br>
+                    porque estás siempre protegid@.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
+    </footer>
+
+
+
 </body>
+
 </html>
